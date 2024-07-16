@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  height: 100vh;
+  background: #000000;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Nunito", sans-serif;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 40px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  margin: 20px 0 0;
+}
+
+h1 span {
+  color: #ff022c;
+}
+
+h1:before {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 100%;
+  left: 110%;
+  background: linear-gradient(90deg, transparent 0%, #000000 5%, #000000 100%);
+  animation: animated 5.5s linear forwards;
+  animation-delay: 2s;
+}
+
+@keyframes animated {
+  0% {
+    left: 110%;
+  }
+
+  100% {
+    left: -20%;
+  }
+}
